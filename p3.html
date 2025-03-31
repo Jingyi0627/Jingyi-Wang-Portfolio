@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <!-- Basic Page Needs –––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>art101</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <!-- Mobile Specific Metas ––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- FONT ––––––––––––––––––––––––––––––––––––––––------–––––––– -->
+  <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+
+  <!-- CSS & JS –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+  <script type="text/javascript" src="css/overlaypopup.js"> </script>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/skeleton.css">
+  <link rel="stylesheet" href="css/custom.css">
+
+  <!-- Favicon –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="icon" type="image/png" href="images/favicon.png">
+
+</head>
+
+<body>
+
+  <!-- NAVIGATION AT the TOP is Here-->
+
+  <nav class="navbar">
+    <div class="container nav_pad">
+      <ul>
+        <li><a class="navbar-link" href="index.html">Main</a></li>
+        <li><a class="navbar-link" href="p1.html"> Project 1</a></li>
+        <li><a class="navbar-link" href="p2.html"> Project 2</a></li>
+        <li><a class="navbar-link" href="p3.html"> Project 3</a></li>
+        <li><a class="navbar-link" href="p4.html"> Project 4</a></li>
+        <li><a class="navbar-link" href="Participation Log.html"> Participation Log</a></li>
+
+
+      </ul>
+    </div>
+  </nav>
+
+
+  <!-- Primary Page Layout
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <div class="container">
+
+    <div class="row section">
+      <header id="header" class="twelve columns">
+        <h3>Jingyi Wang Project 3</h3>
+
+        <div class="statement_text">
+          <em>
+            Good luck, in countless tomorrow
+          </em>
+          <br>
+
+        </div>
+
+      </header>
+    </div>
+
+
+    <!-- NOTE!: For each row section make sure your column divs add up to 12. so 4+8, 6+6, 2+10, etc.-->
+
+    <!-- Start Row //// -->
+    <div class="row section">
+
+
+      <!-- The column for showing the image and the link-->
+
+      <div class="four columns">
+
+        <a href="p5_code/ex5/index.html"> <img src="images/p3thumb2.png" class="u-full-width " /> </a>
+      </div>
+
+      <!-- The column for artist statement and the link-->
+      <div class="eight columns">
+        <h5> Exercise 5 </h5>
+
+        <p>
+          In Exercise 5, I worked with my teammates Jupiter, Khoa and Nabeeha on the topic of creating pixel characters
+          using
+          digital meshes. This project focuses on pixel art through digital grids, and I developed it primarily with the
+          help of
+          grid arrays provided by Nabeeha and Khoa, combined with my creativity and functionality.
+
+          First, I created two 16x16 2D arrays storing string values: “robot” and “red”. These values represent the
+          characteristics of each cell in the grid. For example, “robot” represents the shape of the character, while
+          “red”
+          represents the color of the part. With these values, I can define the attributes of each cell in the grid,
+          such as the
+          color, shape, and so on.
+
+          Next, I wrote custom functions to dynamically assign colors and shapes to each cell in the grid. These
+          functions allow
+          each lattice to be given unique visual characteristics based on the string values “robot” and “red”, and
+          ultimately to
+          be stitched together into complete pixel characters. For example, the “robot” value forms the outline of the
+          character
+          in the mesh, while “red” defines the color of the part, resulting in a complete pixelated robot character.
+
+          Through this process, I gained insight into how pixel art can be implemented through 2D arrays and numeric
+          grids. By
+          mapping these grids to visual representations through custom functions, I learned how to control the
+          appearance and
+          state of each pixel. This process gave me a better understanding of how digital art is constructed and
+          improved my
+          ability to use arrays and functions to control graphical displays in programming.
+
+          Overall, this assignment not only helped me improve my technical skills in programming, but it also gave me an
+          appreciation for how to combine art creation with programming. Through teamwork, we worked together to
+          brainstorm and
+          combine everyone's creativity and skills to finalize a complete pixel character.<br>
+
+          <a href="p5_code/ex5/index.html">Run Exercise 5</a> <br>
+          <a href="p5_code/ex5/sketch.js">See code for Exercise 5</a> <br>
+        </p>
+      </div>
+
+
+
+      <div class="row section">
+
+
+        <!-- The column for showing the image and the link-->
+
+        <div class="four columns">
+
+          <a href="p5_code/project3/index.html"> <img src="images/p3-0.png" class="u-full-width" /> </a>
+
+        </div>
+
+        <!-- The column for artist statement and the link-->
+        <div class="eight columns">
+          <h5> Project 3</h5>
+          <p>
+            In Project 3, I visualized the passage of time through the growth of a tree in the background, accompanied
+            by dynamic
+            changes in the background color. Every hour, the background color transitions smoothly using the lerpColor()
+            function,
+            reflecting the continuous flow of time.
+
+            In addition to this, I implemented a ripple effect in the center of the canvas, triggered every hour. This
+            effect,
+            generated using the ellipse() and fill() functions, consists of gradually expanding circles that represent
+            the rhythm
+            and flow of time. I used three concentric rings to symbolize the passage of time in seconds, minutes, and
+            hours. The
+            angle of each ring is dynamically calculated using the map() function based on the current time, ranging
+            from 0 to 360
+            degrees, to create a progress bar for each time unit.
+
+            Furthermore, each time segment (seconds, minutes, and hours) is associated with a specific activity, which
+            is
+            represented by a corresponding color and icon. The current activity is determined by mapping the current
+            hour (h) to an
+            element in the activity array through a simple remainder operation. This mapping shows how the passage of
+            time
+            correlates with daily human activities.
+
+            Through the tree's growth and the ripple effect, I aimed to represent the irreversibility of time, while the
+            multi-ring
+            clock visually connects the progression of time to the activities that define daily life.
+            <br>
+
+
+
+            <a href="p5_code/project3/index.html">Run Project 3</a> <br>
+            <a href="p5_code/project3/sketch.js">Code for Project 3</a> <br>
+            <a href="https://docs.google.com/presentation/d/1H-LpLNgceqMFSv4qrwuCVAWge6arqLx6vUar3OoyGCY/edit#slide=id.gc6f90357f_0_0"
+              target="_blank">Clock Brainstorming List and Sketch Slideshow</a>
+
+
+        </div>
+
+
+        <!--////  End of row section-->
+      </div>
+
+
+
+      <div class="row section">
+
+        <div class="six columns">
+
+          img 1 <a href="images/p3-1.png"> <img src="images/p3-1.png" class="u-full-width" />
+          </a>
+          img 3 <a href="images/p3-3.png"> <img src="images/p3-3.png" class="u-full-width" />
+          </a> <br>
+
+        </div>
+
+        <div class="six columns">
+          img 2 <a href="images/p3-2.png"> <img src="images/p3-2.png" class="u-full-width" />
+          </a>
+          img 4 <a href="images/p3-4.png"> <img src="images/p3-4.png" class="u-full-width" />
+          </a> <br>
+
+
+        </div>
+      </div>
+
+
+
+
+    </div>
+
+
+  </div>
+
+
+
+
+
+
+
+
+
+  <!-- end of MAIN container /////////////////-->
+
+  </div>
+
+
+
+
+
+</body>
+
+</html>
